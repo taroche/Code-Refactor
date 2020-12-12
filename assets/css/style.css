@@ -70,9 +70,15 @@ p {
 }
 
 main.content {
-    width: 75%;
-    display: inline-block;
+    display: flex;
     margin-left: 20px;
+
+}
+
+section.info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
 }
 
 section.benefit {
