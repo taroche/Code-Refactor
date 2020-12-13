@@ -1,3 +1,4 @@
+/* reset padding/margins */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,6 +10,11 @@ body {
     color: #ffffff;
 }
 
+p {
+    font-size: 16px;
+}
+
+/* updated header */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -37,10 +43,7 @@ div.nav-bar a {
     color: #ffffff;
 }
 
-p {
-    font-size: 16px;
-}
-
+/* main image */
 .hero {
     height: 800px;
     width: 100%;
@@ -50,6 +53,33 @@ p {
     background-position: center;
 }
 
+main.content {
+    display: flex;
+    margin-left: 20px;
+}
+/* Where the main info is */
+section.info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+div.background {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+}
+
+.info img {
+    max-height: 200px;
+}
+
+.info h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
 .float-left {
     float: left;
     margin-right: 25px;
@@ -60,17 +90,7 @@ p {
     margin-left: 25px;
 }
 
-main.content {
-    display: flex;
-    margin-left: 20px;
-}
-
-section.info {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-}
-
+/*  for the side bar that has the benefit */
 section.benefit {
     margin-right: 20px;
     padding: 20px;
@@ -100,23 +120,7 @@ section.benefit {
     max-width: 150px;
 }
 
-div.background {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-}
-
-.info img {
-    max-height: 200px;
-}
-
-.info h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* for the footer */
 .footer {
     padding: 30px;
     clear: both;
